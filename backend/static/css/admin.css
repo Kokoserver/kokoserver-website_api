@@ -1,7 +1,21 @@
 
 
 a:visited, a:link{
-    color: #000 ;
+    color: #000;
+    border: none !important;
+}
+
+
+#searchbar, #searchbar:focus{
+   border: 1.5px solid #000;
+   width: 70%;
+
+}
+
+
+
+a:hover, a:active{
+    text-decoration: none !important;
 }
 .toggle-nav-sidebar:hover,
 .toggle-nav-sidebar:focus {
@@ -23,7 +37,7 @@ a:visited, a:link{
     color: #000 !important;
 }
 
-#changelist-filter li.selected a:hover {
+#changelist-filter a:focus, #changelist-filter a:hover, #changelist-filter li.selected a:focus, #changelist-filter li.selected a:hover {
     color: #000 !important;
 }
 
@@ -44,9 +58,6 @@ div.breadcrumbs {
     color: #fff;
 }
 
-ul ~ li ~ a{
-    color: #000 !important;
-}
 .module h2, .module caption, .inline-group h2 {
     background: rgb(133, 41, 41);
     color: #fff;
@@ -55,6 +66,13 @@ ul ~ li ~ a{
     background: #fff;
 }
 
+#recent-actions-module{
+    display: none;
+    visibility: hidden;
+}
+#content-main {
+    width: 94vw;
+}
 .button.default, input[type=submit].default, .submit-row input.default {
     background: rgb(133, 41, 41);
 }

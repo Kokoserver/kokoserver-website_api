@@ -7,10 +7,10 @@ class UserForm(UserAdmin):
     add_form = CreateUserForm
     form = ChangeUserForm
     model = UserModel
-    list_display  = ('email', "tagname", "is_active", "is_staff", "is_staff", 'is_verified')
+    list_display  = ( "id",'email', "tagname", "is_active", "is_staff", "is_staff", 'is_verified')
     list_filter = ('email', 'tagname', 'is_verified',)
-    search_fields = ('email', 'tagname')
-    ordering = ('email', 'is_verified', 'is_active', 'is_staff',)
+    search_fields = ( 'id','email', 'tagname')
+    ordering = ( "id",'email', 'is_verified', 'is_active', 'is_staff',)
     
     fieldsets = (
         (None, {'fields': ('email', 'tagname','password', )}),
