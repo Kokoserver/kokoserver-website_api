@@ -1,0 +1,131 @@
+
+
+a:visited, a:link{
+    color: #000 ;
+}
+.toggle-nav-sidebar:hover,
+.toggle-nav-sidebar:focus {
+    background-color: #f6f6f6;
+}
+
+.toggle-nav-sidebar {
+    border-right: 1px solid #eaeaea;
+    background-color: #ffffff;
+}
+
+#header {
+    background: rgb(133, 41, 41);
+    color: #fff;
+
+} 
+
+#changelist-filter li.selected a {
+    color: #000 !important;
+}
+
+#changelist-filter li.selected a:hover {
+    color: #000 !important;
+}
+
+#header a:link, #header a:visited {
+    color: #fff;
+}
+
+#branding h1 {
+    color: #fff;
+}
+
+#branding h1, #branding h1 a:link, #branding h1 a:visited {
+    color: #fff;
+}
+
+div.breadcrumbs {
+    background: rgb(133, 41, 41);
+    color: #fff;
+}
+
+ul ~ li ~ a{
+    color: #000 !important;
+}
+.module h2, .module caption, .inline-group h2 {
+    background: rgb(133, 41, 41);
+    color: #fff;
+}
+.module {
+    background: #fff;
+}
+
+.button.default, input[type=submit].default, .submit-row input.default {
+    background: rgb(133, 41, 41);
+}
+
+.button:active, input[type=submit]:active, input[type=button]:active,
+.button:focus, input[type=submit]:focus, input[type=button]:focus,
+.button:hover, input[type=submit]:hover, input[type=button]:hover {
+    background: rgb(133, 41, 41);
+}
+
+.button, input[type=submit], input[type=button], .submit-row input, a.button {
+    background: rgb(133, 41, 41);
+    color: #fff;
+}
+
+a.section:link, a.section:visited {
+    color: #fff;
+}
+
+.object-tools a:focus, .object-tools a:hover {
+  background: rgb(133, 41, 41);
+}
+
+.paginator a:focus, .paginator a:hover {
+    color: white;
+    background: rgb(133, 41, 41);
+}
+
+.paginator a.showall:focus, .paginator a.showall:hover {
+    color: #fff;
+}
+
+.login #header h1 a {
+    color: #fff;
+}
+
+thead th,
+tfoot td {
+    background: #fff;
+}
+
+thead th.required {
+    color: #000;
+}
+
+#branding h2 {
+    color: #fff;
+}
+
+.toggle-nav-sidebar{
+    color: #000;
+}
+
+a.section:link, a.section:visited {
+    color: #fff;
+}
+
+#nav-sidebar .current-model {
+    background: #fff;
+}
+
+a:link, a:visited {
+    color: #000;
+}
+
+
+.change-list ul.toplinks .date-back a:focus,
+.change-list ul.toplinks .date-back a:hover {
+    color: #000;
+}
+
+.paginator a.showall:focus, .paginator a.showall:hover {
+    color: #000;
+}
