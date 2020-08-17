@@ -45,6 +45,7 @@ class User(AbstractUser):
     USERNAME_FIELD = "email"
     REQUIRED_FIELDS = ['tagname']
     
+    
     def __str__(self):
         return self.email
     
