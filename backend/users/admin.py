@@ -8,9 +8,11 @@ class UserForm(UserAdmin):
     form = ChangeUserForm
     model = UserModel
     list_display  = ( "id",'email', "tagname", "is_active", "is_staff", "is_staff", 'is_verified')
-    list_filter = ('email', 'tagname', 'is_verified',)
-    search_fields = ( 'id','email', 'tagname')
-    ordering = ( "id",'email', 'is_verified', 'is_active', 'is_staff',)
+    list_filter = ( 'is_verified', 'is_active')
+    search_fields = ( 'id','email', 'tagname','is_active','is_staff', 'is_verified')
+    ordering = ( "id",'tagname', 'is_verified', 'is_active', 'is_staff',)
+    list_per_page = 10
+    list_display_links = ['email', 'tagname', 'is_active']
     
     fieldsets = (
         (None, {'fields': ('email', 'tagname','password', )}),

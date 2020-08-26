@@ -7,7 +7,7 @@ class UserMananger(BaseUserManager):
         if not email:
             raise ValueError("Email is not set")
         if not tagname:
-            raise ValueError("Account must have username")
+            raise ValueError("Account must have tagname")
         email = self.normalize_email(email)
         user = self.model(email=email, tagname=tagname,**extra_fields)
         
@@ -47,7 +47,7 @@ class User(AbstractUser):
     
     
     def __str__(self):
-        return self.email
+        return self.tagname
     
     def get_status(self):
         return self.is_verified
